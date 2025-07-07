@@ -1,0 +1,180 @@
+/* ===== Base ===== */
+.about-container {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f2f5;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Hero ===== */
+.about-hero {
+  color:#01294d;
+  text-align: center;
+  padding: 2rem 2rem;
+  height: auto;
+}
+
+.about-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-shop-btn {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hero-shop-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* ===== Sections ===== */
+.about-section {
+  padding: 1.5rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #01294d;
+}
+
+/* ===== Features Grid ===== */
+.about-features {
+  background-color: #f0f2f5;
+  padding: 40px 20px;
+  text-align: center;
+  color: #01294d;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  color: #383737;
+  border-radius: 12px;
+  padding: 1.2rem 1rem 1.6rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+/* ===== Contact ===== */
+.about-contact {
+  padding: 0.5rem 1rem 4rem;
+  text-align: center;
+}
+
+.about-contact h2 {
+  color: #01294d;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Testimonials ===== */
+.about-testimonials {
+  padding: 40px 20px;
+  background-color: #f0f2f5;
+  text-align: center;
+  color: #01294d;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  position: relative;
+  color: #01294d;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .hero-shop-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .about-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card,
+  .testimonial-card {
+    padding: 16px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

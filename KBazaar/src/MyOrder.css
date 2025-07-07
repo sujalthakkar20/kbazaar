@@ -1,0 +1,146 @@
+.order-history-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.order-card {
+  background: #f7f7f7;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.order-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  background: white;
+  width: 100%;
+  max-width: 300px;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.order-back-button {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 14px;
+  margin-left: -20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.order-back-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.order-filter {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0 25px;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.order-filter label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.order-filter select {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .order-history-container {
+    padding: 15px;
+  }
+
+  .order-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .order-filter label {
+    font-size: 0.95rem;
+  }
+
+  .order-filter select {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .order-items {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .order-item {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .order-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-back-button {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-history-container {
+    padding: 10px;
+  }
+
+  .order-card {
+    padding: 12px;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .order-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+  }
+
+  .order-back-button {
+    font-size: 0.9rem;
+  }
+}
+

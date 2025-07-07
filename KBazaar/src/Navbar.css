@@ -1,0 +1,162 @@
+.navbar {
+  background-color: #01294d;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Brand logo */
+/* .navbar-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+} */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 65px;             
+  width: 160px;
+  display: block;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);  
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffdd57;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;      
+  right: -6px; 
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.navbar-welcome {
+  padding: 10px;
+  margin-right: -20px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.cart-icon {
+  position: relative;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-img {
+  height: 32px;
+  width:  35px;
+  margin-bottom: 3px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px 0;
+    display: none;
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-links a {
+    font-size: 15px;
+  }
+
+  .navbar-welcome {
+    font-size: 16px;
+  }
+
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+
+  .cart-badge {
+    font-size: 9px;
+    top: -4px;
+    right: -4px;
+  }
+}
+
+
+
+

@@ -1,0 +1,207 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eef2f3;
+  padding-bottom: 40px;
+}
+
+.register-form-box {
+  width: 100%;
+  max-width: 410px;
+  height: 550px;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-error{
+  color: #e74c3c;         
+  font-weight: bold;      
+  margin-bottom: 1rem;    
+  text-align: center;  
+}
+
+.register-input {
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.register-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #01294d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.register-login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.register-login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-login-link a:hover {
+  text-decoration: underline;
+}
+
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; 
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 70px; 
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.password-wrapper input:focus {
+  border-color: #007bff;
+}
+
+.register-toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.register-toggle-password:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Gender Field Container */
+.gender-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+.gender-label {
+  font-size: 16px;
+  min-width: 60px;
+  padding-left: 10px;
+}
+
+.gender-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #696969ec;
+  /* font-weight: 550; */
+
+}
+
+.gender-wrapper input[type="radio"] {
+  accent-color: #007bff; 
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    padding: 20px 10px;
+    align-items: flex-start;
+  }
+
+  .register-form-box {
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .register-heading {
+    font-size: 20px;
+  }
+
+  .register-input,
+  .password-wrapper input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .register-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .gender-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .gender-label {
+    padding-left: 0;
+  }
+
+  .register-login-link {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .register-toggle-password {
+    right: 10px;
+    font-size: 0.8rem;
+  }
+}

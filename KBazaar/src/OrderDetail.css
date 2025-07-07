@@ -1,0 +1,139 @@
+.order-container {
+  max-width: 600px;
+  height: auto;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #01294d;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #0056b3;
+}
+
+.order-form :focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+
+.name,
+.email {
+  background-color: #e0e0e0;
+  pointer-events: none;
+}
+
+.payment-options {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.payment-detail-box {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-color: #007bff;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1); */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-detail-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.payment-detail-box input::placeholder {
+  color: #999;
+}
+
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.card-row input {
+  flex: 1;
+}
+
+ /* .name,.email {
+  background-color: #babebf;
+ } */
+  
+@media (max-width: 768px) {
+  .order-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .payment-detail-box {
+    padding: 15px;
+  }
+
+  .card-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .order-form input,
+  .order-form textarea,
+  .order-form select {
+    font-size: 0.95rem;
+  }
+
+  .order-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .payment-detail-box input {
+    font-size: 0.95rem;
+  }
+}

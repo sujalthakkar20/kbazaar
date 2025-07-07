@@ -1,0 +1,239 @@
+.wishlist-container {
+  /* max-width: 600px; */
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 1rem;
+  background-color: #f0f2f5;
+}
+
+.wishlist-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.wishlist-card {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  background: #f9f9f9;
+  max-width: 280px;
+}
+
+.wishlist-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* .wishlist-card button {
+  margin-top: 1rem;
+  background: #dc3545;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+.wishlist-container p{
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.wishlist-empty {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wishlist-empty  h3{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wishlist-shop-btn {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-top: 70px;
+}
+
+.wishlist-shop-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.wishlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wish-view-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 18px;
+  font-size: 0.95rem; 
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.wishlist-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.wishlist-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wishlist-qty-controls button {
+  padding: 6px 12px;
+  font-size: 1rem;
+  background-color: #01294d;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wishlist-qty-controls span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.add-item-btn,
+.remove-item-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /* width: 95px; */
+  text-align: center;
+
+}
+
+.add-item-btn {
+  background-color: #01294d;
+  color: white;
+}
+
+.remove-item-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.wishlist-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/*  Delete button (image icon) */
+.delete-wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.delete-wishlist-btn img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.2s ease;
+}
+
+.delete-wishlist-btn:hover img {
+  transform: scale(1.1);
+}
+
+.go-to-cart-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.go-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.wback-button-wrapper {
+  margin-bottom: 1rem;
+}
+
+.wback-button {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 14px;
+  /* margin-left: -10px; */
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.wback-button:hover {
+  background: #007bff;
+  color: white;
+}
+@media (max-width: 768px) {
+  .wishlist-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .wishlist-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .wishlist-card {
+    padding: 1rem;
+  }
+
+  .wishlist-shop-btn {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .wishlist-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
