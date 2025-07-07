@@ -28,7 +28,7 @@ function ProductDetail() {
 
   // Fetch product from API
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/products/${id}`)
+    axios.get(`https://kbazaar-alpha.vercel.app/api/products/${id}`)
       // .get(`https://fakestoreapi.com/products/${id}`)
       .then((res) => {
         setProduct(res.data);
