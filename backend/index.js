@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // Frontend URL
+    origin: 'https://kbazaar-lake.vercel.app/', // Frontend URL
     credentials: true,
 };
 app.use(cors(corsOptions));
