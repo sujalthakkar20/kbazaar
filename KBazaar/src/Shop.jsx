@@ -25,7 +25,7 @@ function Shop() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const base = "http://localhost:5000";
+        const base = "https://kbazaar-alpha.vercel.app/";
 
         const categoryRes = await axios.get(`${base}/api/categories`);
         setCategories(categoryRes.data);
