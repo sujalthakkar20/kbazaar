@@ -18,7 +18,7 @@ function Login() {
 
   useEffect(() => {
     if (unameRef.current) {
-      unameRef.current.select();
+      unameRef.current.focus();
     }
   }, []);
 
